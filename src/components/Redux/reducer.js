@@ -1,26 +1,28 @@
 import axios from 'axios';
 
-const URL = 'https://disease.sh/v3/covid-19/countries';
-const GET_STATS = 'covid/GET_STATS';
-const initialState = [];
+const statsUrl = 'https://disease.sh/v3/covid-19/countries';
+const GET_STATISTICS = 'covid/StatisticsReducer/GET_STATS';
 
-export const GetStats = (payload) => ({
-  type: GET_STATS,
+export const GetStatistics = (payload) => ({
+  type: GET_STATISTICS,
   payload,
 });
 
-export const StatsReducer = (state = initialState, action = { type: 'action' }) => {
+const initialState = [];
+
+export const StatisticsReducer = (state = initialState,
+  action = { type: 'action' }) => {
   switch (action.type) {
-    case GET_STATS:
+    case GET_STATISTICS:
       return [...state, ...action.payload];
     default:
       return state;
   }
 };
 
-const FetchStats = async () => {
-  const stats = [];
-  const response = await axios.get(URL);
+const FetchStatistics = async () => {
+  const statistics = [];
+  const response = await axios.get(statsUrl);
   const responseData = response.data;
 
   responseData.map(({ countryInfo: { _id: id, flag }, ...data }) => {
@@ -40,10 +42,10 @@ const FetchStats = async () => {
       todays_recovered: data.todayRecovered,
     };
 
-    return stats.push(covidData);
+    return statistics.push(covidData);
   });
 
-  return stats;
+  return statistics;
 };
 
-export default FetchStats;
+export default FetchStatistics;

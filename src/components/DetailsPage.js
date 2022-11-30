@@ -1,8 +1,7 @@
-/* eslint-disable import/extensions */
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import FetchStats, { GetStats } from '../../Redux/reducer';
+import FetchStatistics, { GetStatistics } from './Redux/reducer';
 
 function CountryDetail() {
   const CountryStore = useSelector((store) => store.details);
@@ -12,8 +11,8 @@ function CountryDetail() {
 
   useEffect(() => {
     if (CountryStore.length === 0) {
-      FetchStats()
-        .then((response) => dispatch(GetStats(response)));
+      FetchStatistics()
+        .then((response) => dispatch(GetStatistics(response)));
     }
   });
 
