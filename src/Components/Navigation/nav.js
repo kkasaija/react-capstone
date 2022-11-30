@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { TiArrowBackOutline } from 'react-icons/ti';
 import { BsMic } from 'react-icons/bs';
@@ -16,7 +17,7 @@ export default function Nav() {
         <NavLink exact="true" to={{ pathname: '/' }}>
           {returnToHome}
         </NavLink>
-        <h1 className="navheader">AFRICAN-COVID19-STATS</h1>
+        <h1 className="navheader">AFRICAN-COVID19-DATA-STATISTICS</h1>
         <div className="navIcons">
           <BsMic />
           <AiOutlineSetting />

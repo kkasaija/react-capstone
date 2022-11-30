@@ -1,10 +1,9 @@
-/* eslint-disable no-undef */
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { FaSearchLocation } from 'react-icons/fa';
 import { generate } from 'randomized-string';
-// import FetchStats, { GetStats } from '../../Redux/reducer';
+import FetchStats, { GetStats } from '../../Redux/reducer';
 
 function HomePage() {
   const CountryStore = useSelector((store) => store.details);
