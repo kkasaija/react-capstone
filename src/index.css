@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', 'Gill Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e70983;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav1 {
+  background-color: #fd33a2;
+  padding: 30px;
+  color: white;
+  gap: 3%;
+}
+
+.nav2 {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  color: white;
+  text-align: center;
+}
+
+.covidlogo {
+  height: 100px;
+}
+
+.arrowBack {
+  width: 25px;
+  height: 25px;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.navheader {
+  margin: 0;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid white;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.continent {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+::placeholder {
+  color: black;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.input-search {
+  height: 28px;
+  padding: 1%;
+  width: 60vw;
+
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: white;
+  background-color: #e70983;
+  border: 1px solid;
+  margin-inline: 5%;
+}
+
+.today {
+  list-style: none;
+}
+
+.total {
+  list-style: none;
+}
+
+ul h3 {
+  font-size: 38px;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.dataUL {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+}
+
+.dataUL a {
+  padding: 20px;
+  background-color: #e70983;
+  color: white;
+}
+
+.dataUL a:nth-child(4n),
+.dataUL a:nth-child(4n + 1) {
+  background-color: #fd33a2;
+  color: white;
+}
+
+.countryDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flag {
+  width: 60px;
+  height: 40px;
+}
+
+.flag2 {
+  padding-left: 10%;
+}
+
+.cases {
+  padding-right: 10%;
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: large;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  .countryDetails {
+    display: block;
+  }
+
+  .navheader {
+    font-size: small;
+  }
+
+  .population {
+    font-size: inherit;
+  }
+
+  .dataContainer {
+    display: block;
+  }
+
+  .flag2 {
+    padding: 0;
+  }
+
+  ul h3 {
+    font-size: 25px;
+  }
+
+  ul li {
+    font-size: 15px;
+  }
+
+  .data {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .dataUL {
+    margin-left: -11%;
+    margin-top: 0;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+    text-align: center;
+  }
+}
