@@ -15,7 +15,10 @@ exports[`Render components render Nav 1`] = `
     <h1
       className="navheader"
     >
-      AFRICAN-COVID19-DATA-STATISTICS
+      AFRICAN COUNTRIES-COVID19-STATISTICAL DATA
+       
+      <br />
+      ( disease.sh - Open Disease Data API )
     </h1>
     <div
       className="navIcons"
