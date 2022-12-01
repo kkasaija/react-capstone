@@ -17,7 +17,12 @@ export default function Nav() {
         <NavLink exact="true" to={{ pathname: '/' }}>
           {returnToHome}
         </NavLink>
-        <h1 className="navheader">AFRICAN-COVID19-STATISTICAL DATA</h1>
+        <h1 className="navheader">
+          AFRICAN COUNTRIES-COVID19-STATISTICAL DATA
+          {' '}
+          <br />
+          ( disease.sh - Open Disease Data API )
+        </h1>
         <div className="navIcons">
           <BsMic />
           <AiOutlineSetting />

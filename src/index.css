@@ -202,7 +202,6 @@ ul li {
     display: -ms-grid;
     grid-template-columns: auto auto;
     -ms-grid-columns: 50% 50%;
-    margin-left: -5%;
     margin-top: 0;
   }
 

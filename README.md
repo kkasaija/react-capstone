@@ -1,30 +1,39 @@
 # 📖 African Covid 19 stats <a name=""></a>
-On the theme: African Covid 19 stats
+- This is an application that displays the Covid Statistical Data for the african continent based on the [disease.sh - Open Disease Data API](https://disease.sh/).
 ## 🛠 Built With <a name="built-with"></a>
-### Tech Stack <a name="tech-stack"></a>
-> HTML, CSS, JS Webpack, react-redux.
 
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux.js</a></li>
+    <li><a href="https://react-redux.js.org/">React-Redux</a></li>
+    <li><a href="https://reactrouter.com/">React-Router</a></li>
+    <li><a href="https://git-scm.com/">Git</a></li>
+    <li><a href="https://www.netlify.com/">Netlify</a></li>
+    <li><a href="https://www.javascript.com/">Javascript</a></li>
   </ul>
 </details>
+
 ### Key Features <a name="Conneting to api server"></a>
 
-> Interact with spaceX API.
+> - Interact with the: `disease.sh - Open Disease Data API`.
 
-- Fetch Missions
-- Fetch Rockets
-- Join/Leave Missions
-- Make/ Cancel Rocket-Reservations
+> - Fetch covid data from the API.
+> - Display data in the UI.
+> - Get data for a specific african country.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link]()
 
+## 🚶‍♂️🚶‍♂️Walk through video clip
+- [Walk through](https://drive.google.com/file/d/1G7U6-Fib5ulpHBx42AfGPBxGR85WYcrL/view?usp=sharing)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 >
@@ -33,9 +42,10 @@ To get a local copy up and running, follow these steps.
 Vscode. must have git installed.
 In order to run this project you need:
 ### Setup
-Clone this [Repository]() to your desired folder:
+Clone this [Repository](https://github.com/Kasaija-Kenneth/react-capstone) to your desired folder:
 
 ### To enter Directory
+> cd react-capstone
 ### To Install Packages
 `npm install`
 ### To run project on local server
@@ -49,22 +59,26 @@ Clone this [Repository]() to your desired folder:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-> Mention all of the collaborators of this project.
-👤 **Author**
+## Author <a name=""></a>
+
 👤 **Kasaija Kenneth**
-- GitHub: [@Kasaija-Kenneth](https://github.com/Kasaija-Kenneth)
-- Twitter: [@kenn_ug](https://twitter.com/@kenn_ug)
-- LinkedIn: [kenneth-k-310722234](https://linkedin.com/in/kasaija-kenneth)
-- Email: [G-mail](kasaijak@gmail.com)
+
+> - GitHub: [@Kasaija-Kenneth](https://github.com/Kasaija-Kenneth)
+
+> - Twitter: [@kenn_ug](https://twitter.com/@kenn_ug)
+
+> - LinkedIn: [kasaija-kenneth](https://linkedin.com/in/kasaija-kenneth)
+
+> - Email: [G-mail](kasaijak@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
 
-- [x] **[Profile]**
-- [x] **[Mission]**
-- [x] **[Rockets]**
+- [x] **[African continent]**
+- [x] **[Country specific data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,7 +86,7 @@ Clone this [Repository]() to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/eerapheal/react-redux-project/issues/).
+Feel free to check the [issues page](https://github.com/Kasaija-Kenneth/react-capstone/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +102,8 @@ If you like this project, please don't forget to give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+> - Nelson Sakwa on Behance for the [Design guideline](https://www.behance.net/sakwadesignstudio)
+> - Microverse for the project inspiration.
 
 I would like to thank...
 
@@ -101,8 +116,7 @@ I would like to thank...
 > : it  wait for elememts.
 
 - **[How dose asycn works.]**
-
-  - [it  wait for elememts]
+  - it  waits for elememts
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -111,8 +125,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [GPL](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
