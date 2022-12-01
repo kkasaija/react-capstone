@@ -17,7 +17,7 @@ export default function Nav() {
         <NavLink exact="true" to={{ pathname: '/' }}>
           {returnToHome}
         </NavLink>
-        <h1 className="navheader">AFRICAN-COVID19-DATA-STATISTICS</h1>
+        <h1 className="navheader">AFRICAN-COVID19-STATISTICAL DATA</h1>
         <div className="navIcons">
           <BsMic />
           <AiOutlineSetting />

@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Lato', 'Gill Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e70983;
+  background-color: #EB3A9B;
+}
+
+#root {
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 nav div {
@@ -13,6 +19,10 @@ nav div {
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
+}
+
+ul {
+  padding: 0;
 }
 
 a {
@@ -45,19 +55,25 @@ a {
 
 h1 {
   font-weight: bold;
-  margin: 0;
 }
 
 .navheader {
   margin: 0;
   font-weight: 700;
+  text-align: center;
+}
+
+.search-icon {
+  font-size: 20px;
+  display: flex;
 }
 
 .form {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding-left: 3%;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 2%;
   border-bottom: 1px solid white;
 }
 
@@ -69,14 +85,18 @@ h1 {
 
 ::placeholder {
   color: black;
-  font-size: 18px;
+  font-size: 12px;
   padding-bottom: 5px;
 }
 
 .input-search {
-  height: 28px;
-  padding: 1%;
-  margin-bottom: 10%;
+  height: 20px;
+  width: 50%;
+  border-style: none;
+}
+
+.input-search:focus {
+  outline: none;
 }
 
 .link {
@@ -99,6 +119,7 @@ h1 {
 
 .today {
   list-style: none;
+  margin: 0 auto;
 }
 
 .total {
@@ -148,17 +169,49 @@ ul li {
   height: 132px;
 }
 
-.cases {
-  padding-right: 10%;
-}
-
-@media (max-width: 375px) {
-  h1 {
-    font-size: large;
+@media (max-width: 414px) {
+  #root {
+    margin-left: -15px;
+    align-items: center;
+    justify-content: center;
   }
 
-  .form {
-    padding-left: 18%;
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .cases {
+    padding-left: 26%;
+  }
+
+  .nav1 {
+    background-color: #fd33a2;
+    padding: 20px;
+    color: white;
+    gap: 3%;
+  }
+  
+
+  nav {
+    margin-left: 4%;
+  };
+
+  .dataUL {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: auto auto;
+    -ms-grid-columns: 50% 50%;
+    margin-left: -5%;
+    margin-top: 0;
+  }
+
+  .dataUL a {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e70983;
+    color: white;
   }
 
   .countryDetails {
@@ -170,15 +223,20 @@ ul li {
   }
 
   .population {
-    font-size: inherit;
+    font-size: 14px;
   }
 
   .dataContainer {
     display: block;
+    margin-left: 30px;
   }
 
   .flag2 {
     padding: 0;
+  }
+
+  ul {
+    padding-left: 16px;
   }
 
   ul h3 {
@@ -193,11 +251,7 @@ ul li {
     display: flex;
     align-items: center;
     gap: 5%;
-  }
-
-  .dataUL {
-    margin-left: -11%;
-    margin-top: 0;
+    justify-content: center;
   }
 
   ::placeholder {

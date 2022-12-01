@@ -32,12 +32,10 @@ function HomePage() {
   return (
     <div className="homePage">
       <form className="form">
-        <div>
+        <div className="search-icon">
           <FaSearchLocation />
         </div>
-        <div>
-          <input className="input-search" type="text" value={searchValue} placeholder="Search Country..." onChange={filterSearch} />
-        </div>
+        <input className="input-search" type="text" value={searchValue} placeholder="Search Country..." onChange={filterSearch} />
       </form>
       <ul className="dataUL">
         {
