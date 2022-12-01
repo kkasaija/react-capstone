@@ -14,7 +14,7 @@ function HomePage() {
       FetchStats()
         .then((response) => dispatch(GetStats(response)));
     }
-  }, []);
+  }, [CountryStore.length, dispatch]);
 
   let Africa = CountryStore.filter((item) => item.continent === 'Africa');
   const location = useLocation();

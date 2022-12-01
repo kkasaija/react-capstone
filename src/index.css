@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', 'Gill Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EB3A9B;
+  background-color: #eb3a9b;
 }
 
 #root {
@@ -191,11 +192,10 @@ ul li {
     color: white;
     gap: 3%;
   }
-  
 
   nav {
     margin-left: 4%;
-  };
+  }
 
   .dataUL {
     display: grid;
