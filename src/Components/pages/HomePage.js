@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -20,12 +21,17 @@ function HomePage() {
   const location = useLocation();
   const query = new URLSearchParams(location.search);
   const search = query.get('search') || '';
-  Africa = Africa.filter((country) => country.country.includes(search));
+  Africa = Africa.filter(
+    (country) => country.country.toUpperCase().includes(
+      search.toLocaleUpperCase(),
+    ),
+  );
   const navigate = useNavigate();
   const [searchValue, setSearchValue] = useState(search);
 
   const filterSearch = (event) => {
-    navigate(event.target.value ? `?search=${event.target.value}` : '');
+    event.preventDefault();
+    navigate((event.target.value) ? `?search=${event.target.value}` : '');
     setSearchValue(event.target.value);
   };
 
